@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Backend-admin.min.css">
+    <title>Backend</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 左邊功能列 -->
+          <nav class="col-2 d-flex flex-column justify-content-between">
+            <div>
+              <!-- logo -->
+              <div class="logo-wrap">
+                <a href=""><h1>ANSWER Backend</h1></a>            
+              </div>
+              <!-- 功能選單 -->
+              <ul class="function-list">
+                <li class="function-item">
+                  <a class="d-flex" href="">
+                    <span class="material-icons mr-3">insert_chart</span>
+                    <h2 class="font-weight-bold">Dashboard</h2>              
+                  </a>
+                </li>
+                <li class="function-item">
+                  <a class="d-flex" href="">
+                    <span class="material-icons mr-3">forum</span>
+                    <h2 class="font-weight-bold">Question</h2>
+                  </a>
+                </li>
+                <li class="function-item">
+                  <a class="d-flex" href="">
+                    <span class="material-icons mr-3">assignment</span>
+                    <h2 class="font-weight-bold">Assignment</h2>
+                  </a>
+                </li>
+                <li class="function-item">
+                  <a class="d-flex" href="">
+                    <span class="material-icons mr-3">video_library</span>
+                    <h2 class="font-weight-bold">Course</h2>
+                  </a>
+                </li>
+                <li class="function-item">
+                  <a class="d-flex function-item-active" href="">
+                    <span class="material-icons mr-3">supervisor_account</span>
+                    <h2 class="font-weight-bold">Admin</h2>
+                  </a>
+                </li>
+                <li class="function-item">
+                  <a class="d-flex" href="">
+                    <span class="material-icons mr-3">settings</span>
+                    <h2 class="font-weight-bold">Settings</h2>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- 用戶資訊 -->
+            <div class="user-wrap d-flex align-items-center">
+              <div class="user-photo mr-3">
+                <img src="https://travel.taichung.gov.tw/Utility/DisplayImage?id=29765" alt="">
+              </div>
+              <div class="user-info">
+                <h3 class="user-name">Hohaiyan Rock Festival</h3>
+                <p class="user-email secondary fz-14">hohaiyan@music.com</p>
+              </div>
+            </div>
+          </nav>
+        <!-- 右邊內容欄 -->
+          <section class="col-10 content">
+            <!-- 右邊上提示列 -->
+            <header class="d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <h2 class="fz-24 font-weight-bold">ADMIN</h2>
+                <button class="d-flex">
+                  <span class="material-icons">add</span>
+                  <p class="font-weight-bold">Add New Admin</p>
+                </button>
+              </div>
+              <div class="icons-wrap d-flex justify-content-center">
+                <span class="material-icons mr-28">search</span>
+                <span class="material-icons">notifications_active</span>
+              </div>
+            </header>
+            <!-- 右邊中表格 -->
+            <table class="table mt-5">
+              <thead>
+                <tr>
+                  <th scope="col">
+                    ID
+                    <span class="material-icons">arrow_downward</span>
+                  </th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Email</th>
+                  <th scope="col">Verified</th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">#1</th>
+                  <td>Emir Wicks</td>
+                  <td>emir.wicks@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#2</th>
+                  <td>Zaina Goldsmith</td>
+                  <td>zaina.goldsmith@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#3</th>
+                  <td>Mahima Lopez</td>
+                  <td>Mahima.Lopez@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#4</th>
+                  <td>Pharrell Murray</td>
+                  <td>Pharrell.Murray@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#5</th>
+                  <td>Annika Mcbride</td>
+                  <td>Annika.Mcbride@mail.com</td>
+                  <td>No</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#6</th>
+                  <td>Fatimah Clark</td>
+                  <td>Fatimah.Clark@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#7</th>
+                  <td>Klaudia Rhodes</td>
+                  <td>Klaudia.Rhodes@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#8</th>
+                  <td>Tillie Lucero</td>
+                  <td>TTillie.Lucero@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#9</th>
+                  <td>Sabrina Stephenson</td>
+                  <td>Sabrina.Stephenson@mail.com</td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">#10</th>
+                  <td>Annie Smith</td>
+                  <td>Annie.Smith@mail.com </td>
+                  <td>Yes</td>
+                  <td class="d-flex justify-content-end pr-0">
+                    <span class="material-icons mr-28" data-toggle="modal" data-target="#exampleModalLong">remove_red_eye</span>
+                    <span class="material-icons">edit</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- 右邊下頁數 -->
+            <div class="btn-toolbar d-flex justify-content-end" role="toolbar" aria-label="Toolbar with button groups">
+              <div class="btn-group  m-0" role="group" aria-label="First group">
+                <button type="button" class="btn">
+                  <span class="material-icons">chevron_left</span>
+                </button>
+                <button type="button" class="btn page-active">1</button>
+                <button type="button" class="btn">2</button>
+                <button type="button" class="btn">3</button>
+                <button type="button" class="btn">
+                  <span class="material-icons">chevron_right</span>
+                </button>
+              </div>
+            </div>
+          </section>
+      </div>
+
+      <!-- 彈跳視窗 -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <div class="media">
+                <div class="modal-img mr-4">
+                  <img src="https://omusic.friday.tw/img/artist/26035.jpg" class="mr-3" alt="">
+                </div>
+                <div class="media-body">
+                  <ul>
+                    <li>
+                      #1
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </li>
+                    <li>Admin</li>
+                    <li class="mb-1 fz-24 font-weight-bold">隨性 Random</li>
+                    <li class="mb-1 fz-14 secondary">kat4646@gmail.com</li>
+                  </ul>
+                  <div class="more-wrap">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <button class="btn more-btn fz-14">verified</button>
+                      <span class="material-icons btn-expand">expand_more</span>
+                    </div>
+                    <div class="more-btn-wrap mt-4">
+                      <button class="btn sns-btn mr-3">YouTube</button>
+                      <button class="btn sns-btn">Facebook</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script>
+
+  let moreState = 1;
+  $(".btn-expand").click(function(){
+    $(".more-btn-wrap").slideToggle();
+    if (moreState) {
+      $(".btn-expand").text("expand_less");
+      moreState = 0;
+    }else {
+      $(".btn-expand").text("expand_more");
+      moreState = 1;
+    }
+  })
+
+</script>
+</body>
+</html>
