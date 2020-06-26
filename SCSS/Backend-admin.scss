@@ -1,7 +1,7 @@
 @import 'reset';
 @import 'base';
 
-$primary: #EDF4EE;
+$primary: rgba(255, 200, 168, 0.5);
 $primary-light: #CDDDCD;
 $primary-dark: #2A8356;
 $secondary: #0000009A;
@@ -26,7 +26,7 @@ $secondary: #0000009A;
 
 
 // nav
-nav {
+.function-navbar {
     padding: 32px;
     background-color: $primary;
     .logo-wrap {
@@ -61,7 +61,7 @@ nav {
                 color: $primary-dark;
             }
         }
-        h2 {
+        p {
             color: #000;
         }
     }
@@ -156,7 +156,7 @@ nav {
             padding: 4px 8px;
             border-radius: 2px;
             color: #121212;
-            background-color: $primary-light;
+            background-color: $primary;
         }
         .material-icons {
             cursor: pointer;
